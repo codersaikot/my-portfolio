@@ -7,7 +7,7 @@ import { personalInfo, skills, projects, experience } from "../data/portfolioDat
 // ============================================================
 
 const infoChips = [
-  { label: "Name",       val: "Tariqul Islam Saykat" },
+  { label: "Name",       val: "Tariqul Islam Saikot" },
   { label: "Role",       val: "Software Engineer"    },
   { label: "Location",   val: "Bangladesh"           },
   { label: "Experience", val: "2+ Years"             }

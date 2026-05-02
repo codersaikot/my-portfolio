@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="hero__photo-card">
             <div className="hero__photo-ring" aria-hidden="true" />
             <img
-              src="/profile.jpg.jpeg"
+              src="/public/profile.png"
               alt={`${personalInfo.name} profile`}
               className="hero__photo"
             />

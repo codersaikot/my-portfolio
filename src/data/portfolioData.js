@@ -4,12 +4,12 @@
 // ============================================================
 
 export const personalInfo = {
-  name: "Tariqul Islam Saykat",
+  name: "Tariqul Islam Saikot",
   title: "Software Engineer / Full Stack Developer",
   tagline: "Building scalable, efficient software solutions",
-  email: "saykat@example.com",
-  github: "https://github.com/saykat",
-  linkedin: "https://linkedin.com/in/saykat",
+  email: "mdsaikot678@gmail.com",
+  github: "https://github.com/codersaikot",
+  linkedin: "https://www.linkedin.com/in/tariqul-islam-saikot",
   location: "Bangladesh",
   available: true,
   bio: [
