@@ -124,14 +124,14 @@ export const projects = [
 
 export const experience = [
   {
-    period: "2023 – Present",
+    period: "03/2024 – Present",
     title: "Software Implementation Engineer",
     company: "NexGen Innovation Ltd.",
     desc: "Developing, implementing, and managing Hospital Information Systems (HIS) and ERP solutions for healthcare clients. Lead end-to-end system deployments including requirements gathering, configuration, and user training.",
     chips: ["HIS", "ERP", "React", "Node.js", "MongoDB", "System Integration"]
   },
   {
-    period: "2022 – 2023",
+    period: "10/2025 – Present ",
     title: "ERPNext Functional Consultant & Project Coordinator",
     company: "Cloudy Camp Limited",
     desc: "Implemented and customized ERPNext for multiple enterprise clients. Managed project timelines, coordinated between technical teams and stakeholders, and delivered functional training to end users.",
