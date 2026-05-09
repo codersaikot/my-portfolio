@@ -14,7 +14,7 @@ const infoChips = [
 ];
 
 const resumeConfig = {
-  isAvailable: false,
+  isAvailable: true,
   href: "/resume.pdf"
 };
 
