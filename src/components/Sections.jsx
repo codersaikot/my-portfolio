@@ -240,6 +240,7 @@ export function Contact() {
 
   const links = [
     { icon: "📧", label: "email",    text: personalInfo.email,    href: `mailto:${personalInfo.email}` },
+    { icon: "📱", label: "phone",    text: personalInfo.phone,    href: `tel:${personalInfo.phone}` },
     { icon: "🐙", label: "github",   text: "github.com/saykat",   href: personalInfo.github },
     { icon: "💼", label: "linkedin", text: "linkedin.com/in/saykat", href: personalInfo.linkedin }
   ];
@@ -261,7 +262,13 @@ export function Contact() {
             </p>
             <div className="contact-links">
               {links.map(l => (
-                <a key={l.label} href={l.href} className="contact-link" target="_blank" rel="noreferrer">
+                <a
+                  key={l.label}
+                  href={l.href}
+                  className="contact-link"
+                  target={l.href.startsWith("http") ? "_blank" : undefined}
+                  rel={l.href.startsWith("http") ? "noreferrer" : undefined}
+                >
                   <div className="contact-link__icon">{l.icon}</div>
                   <div>
                     <span className="contact-link__label">{l.label}</span>

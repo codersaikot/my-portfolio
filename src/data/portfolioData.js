@@ -8,6 +8,7 @@ export const personalInfo = {
   title: "Software Engineer / Full Stack Developer",
   tagline: "Building scalable, efficient software solutions",
   email: "mdsaikot678@gmail.com",
+  phone: "+8801637288678",
   github: "https://github.com/codersaikot",
   linkedin: "https://www.linkedin.com/in/tariqul-islam-saikot",
   location: "Bangladesh",
