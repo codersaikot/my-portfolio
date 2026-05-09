@@ -13,8 +13,14 @@ const infoChips = [
   { label: "Experience", val: "2+ Years"             }
 ];
 
+const resumeConfig = {
+  isAvailable: false,
+  href: "/resume.pdf"
+};
+
 export function About() {
   const ref = useFadeIn();
+  const resumeHref = resumeConfig.isAvailable ? resumeConfig.href : "#";
   return (
     <section id="about" className="section">
       <div ref={ref} className="fade-in container">
@@ -28,6 +34,28 @@ export function About() {
               <div className="avatar-ring" />
               <span className="avatar-emoji">👨‍💻</span>
             </div>
+            <a
+              className={`resume-button ${resumeConfig.isAvailable ? "" : "resume-button--disabled"}`.trim()}
+              href={resumeHref}
+              download={resumeConfig.isAvailable || undefined}
+              aria-label="Download resume PDF"
+              aria-disabled={!resumeConfig.isAvailable}
+              onClick={!resumeConfig.isAvailable ? event => event.preventDefault() : undefined}
+            >
+              <span className="resume-button__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12 3v10m0 0 4-4m-4 4-4-4M5 15v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.8"
+                  />
+                </svg>
+              </span>
+              <span>Download Resume</span>
+            </a>
           </div>
 
           {/* Text */}
