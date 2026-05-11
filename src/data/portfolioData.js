@@ -1,5 +1,5 @@
 // ============================================================
-// portfolioData.js — Central data source for the portfolio
+// portfolioData.js - Central data source for the portfolio
 // Update this file to customize all portfolio content
 // ============================================================
 
@@ -30,40 +30,49 @@ export const typingTexts = [
 
 export const skills = {
   Frontend: [
-    { icon: "🌐", name: "HTML5",      level: 90 },
-    { icon: "🎨", name: "CSS3",       level: 88 },
-    { icon: "📱", name: "Bootstrap",  level: 85 },
-    { icon: "💨", name: "Tailwind",   level: 90 },
+    { icon: "🌐", name: "HTML5", level: 90 },
+    { icon: "🎨", name: "CSS3", level: 88 },
+    { icon: "📱", name: "Bootstrap", level: 85 },
+    { icon: "💨", name: "Tailwind", level: 90 },
     { icon: "⚡", name: "JavaScript", level: 87 },
-    { icon: "⚛️", name: "React.js",   level: 85 },
-    { icon: "🔥", name: "Firebase",   level: 75 }
+    { icon: "⚛️", name: "React.js", level: 85 },
+    { icon: "🔥", name: "Firebase", level: 75 }
   ],
   Backend: [
-    { icon: "🐘", name: "PHP",        level: 80 },
-    { icon: "🏗️", name: "Laravel",    level: 78 },
-    { icon: "🟩", name: "Node.js",    level: 82 },
+    { icon: "🐘", name: "PHP", level: 80 },
+    { icon: "🏗️", name: "Laravel", level: 78 },
+    { icon: "🟩", name: "Node.js", level: 82 },
     { icon: "🚂", name: "Express.js", level: 80 },
-    { icon: "🍃", name: "MongoDB",    level: 82 },
-    { icon: "🔌", name: "REST API",   level: 88 },
-    { icon: "🔄", name: "React Query",level: 75 },
-    { icon: "🗃️", name: "Redux",      level: 73 },
-    { icon: "▲",  name: "Next.js",    level: 72 }
+    { icon: "🍃", name: "MongoDB", level: 82 },
+    { icon: "🔌", name: "REST API", level: 88 },
+    { icon: "🔄", name: "React Query", level: 75 },
+    { icon: "🗃️", name: "Redux", level: 73 },
+    { icon: "▲", name: "Next.js", level: 72 }
   ],
   Tools: [
-    { icon: "💻", name: "VS Code",    level: 95 },
-    { icon: "🎯", name: "Figma",      level: 70 },
-    { icon: "🌿", name: "Git",        level: 88 },
-    { icon: "🐙", name: "GitHub",     level: 88 },
-    { icon: "🦊", name: "GitLab",     level: 80 },
-    { icon: "⚙️", name: "Odoo ERP",   level: 75 },
-    { icon: "📊", name: "ERPNext",    level: 72 }
+    { icon: "💻", name: "VS Code", level: 95 },
+    { icon: "🎯", name: "Figma", level: 70 },
+    { icon: "🌿", name: "Git", level: 88 },
+    { icon: "🐙", name: "GitHub", level: 88 },
+    { icon: "🦊", name: "GitLab", level: 80 },
+    { icon: "⚙️", name: "Odoo ERP", level: 75 },
+    { icon: "📊", name: "ERPNext", level: 72 }
   ]
 };
+
+const projectImages = [
+  "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80"
+];
 
 export const projects = [
   {
     id: 1,
     icon: "🏥",
+    image: projectImages[0],
     color: "rgba(74,222,128,.15)",
     category: "Web App",
     title: "Hospital Management System",
@@ -76,6 +85,7 @@ export const projects = [
   {
     id: 2,
     icon: "📜",
+    image: projectImages[1],
     color: "rgba(108,99,255,.15)",
     category: "Web App",
     title: "FIQC E-Certification Software",
@@ -88,6 +98,7 @@ export const projects = [
   {
     id: 3,
     icon: "🔬",
+    image: projectImages[2],
     color: "rgba(34,211,238,.15)",
     category: "System",
     title: "Laboratory Information System",
@@ -100,6 +111,7 @@ export const projects = [
   {
     id: 4,
     icon: "⚙️",
+    image: projectImages[3],
     color: "rgba(244,63,94,.15)",
     category: "ERP",
     title: "ERP Implementation & Config",
@@ -112,6 +124,7 @@ export const projects = [
   {
     id: 5,
     icon: "📦",
+    image: projectImages[4],
     color: "rgba(251,146,60,.15)",
     category: "Web App",
     title: "Inventory Management Dashboard",
@@ -125,14 +138,14 @@ export const projects = [
 
 export const experience = [
   {
-    period: "03/2024 – Present",
-    title: "Software Implementation Engineer",
+    period: "03/2024 - Present",
+    title: "Software Engineer",
     company: "NexGen Innovation Ltd.",
     desc: "Developing, implementing, and managing Hospital Information Systems (HIS) and ERP solutions for healthcare clients. Lead end-to-end system deployments including requirements gathering, configuration, and user training.",
     chips: ["HIS", "ERP", "React", "Node.js", "MongoDB", "System Integration"]
   },
   {
-    period: "10/2025 – Present ",
+    period: "10/2025 - Present",
     title: "ERPNext Functional Consultant & Project Coordinator",
     company: "Cloudy Camp Limited",
     desc: "Implemented and customized ERPNext for multiple enterprise clients. Managed project timelines, coordinated between technical teams and stakeholders, and delivered functional training to end users.",

@@ -160,6 +160,15 @@ export function Projects() {
         <div className="projects-grid">
           {shown.map(p => (
             <div key={p.id} className="project-card">
+              <div className="project-card__media">
+                <img
+                  src={p.image}
+                  alt={`${p.title} thumbnail`}
+                  className="project-card__image"
+                  loading="lazy"
+                />
+                <div className="project-card__media-overlay" />
+              </div>
               <div className="project-card__header">
                 <div
                   className="project-card__icon"
@@ -177,6 +186,11 @@ export function Projects() {
                 <p  className="project-card__desc">{p.desc}</p>
                 <div className="project-tags">
                   {p.tags.map(t => <span key={t} className="tag">{t}</span>)}
+                </div>
+                <div className="project-card__actions">
+                  <a href={p.live} className="btn btn--outline project-card__button">
+                    View Details
+                  </a>
                 </div>
               </div>
             </div>
